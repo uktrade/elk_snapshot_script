@@ -9,8 +9,8 @@ then
 {
   "type": "s3",
   "settings": {
-    "bucket": "webops-elk-bak-elastic-backups-dev",
-    "region": "eu-west-2"
+    "bucket": "$SNAPSHOT_BUCKET",
+    "region": "$AWS_DEFAULT_REGION"
   }
 }
 ' -k --user elastic:changeme
