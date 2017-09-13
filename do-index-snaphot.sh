@@ -7,7 +7,8 @@ request_body=$(< <(cat <<EOF
   "type": "s3",
   "settings": {
     "bucket": "$SNAPSHOT_BUCKET",
-    "region": "$AWS_DEFAULT_REGION"
+    "region": "$AWS_DEFAULT_REGION",
+    "server_side_encryption": "true"
   }
 }
 EOF
